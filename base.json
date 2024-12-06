@@ -1,0 +1,144 @@
+{
+  "Knowledge base": [
+    {
+      "related fact": "sameness",
+      "question": "There's construction on the road you usually take. This means you wont be able to take the same road you usually do. How do you react?",
+      "options": [
+        {"answer": "I know more ways to get where I need to be, I'll just take a detour", "value": [0, 1]},
+        {"answer": "I take the same route every day, I can't just take a different way!", "value": [1, 1]}
+      ]
+    },
+    {
+      "related fact": "fidgeting",
+      "question": "Stereotyped or repetitive motor movements, use of objects, or speech (e.g., simple motor stereotypies, lining up toys or flipping objects, echolalia, idiosyncratic phrases).",
+      "options": [
+        {"answer": "yes", "value": [1, 1]},
+        {"answer": "no", "value": [0, 1]}
+      ]
+    },
+    {
+      "related fact": "interests",
+      "question": "Highly restricted, fixated interests that are abnormal in intensity or focus (e.g.,\nstrong attachment to or preoccupation with unusual objects, excessively\ncircumscribed or perseverative interests).",
+      "options": [
+        {"answer": "yes", "value": [1, 1]},
+        {"answer": "no", "value": [0, 1]}
+      ]
+    },
+    {
+      "related fact": "sensory input",
+      "question": "Hyper- or hyporeactivity to sensory input or unusual interest in sensory\naspects of the environment (e.g., apparent indifference to pain/temperature,\nadverse response to specific sounds or textures, excessive smelling or\ntouching of objects, visual fascination with lights or movement).",
+      "options": [
+        {"answer": "yes", "value": [1, 1]},
+        {"answer": "no", "value": [0, 1]}
+      ]
+    },
+    {
+      "related fact": "relationships",
+      "question": "Deficits in developing, maintaining, and understanding relationships, ranging,\nfor example, from difficulties adjusting behavior to suit various social contexts;\nto difficulties in sharing imaginative play or in making friends; to absence of\ninterest in peers.",
+      "options": [
+        {"answer": "yes", "value": [1, 1]},
+        {"answer": "no", "value": [0, 1]}
+      ]
+    },
+    {
+      "related fact": "reciprocity",
+      "question": "Deficits in social-emotional reciprocity, ranging, for example, from abnormal\nsocial approach and failure of normal back-and-forth conversation; to reduced\nsharing of interests, emotions, or affect; to failure to initiate or respond to\nsocial interactions.",
+      "options": [
+        {"answer": "yes", "value": [1, 1]},
+        {"answer": "no", "value": [0, 1]}
+      ]
+    },
+    {
+      "related fact": "nonverbal",
+      "question": "Deficits in nonverbal communicative behaviors used for social interaction,\nranging, for example, from poorly integrated verbal and nonverbal\ncommunication; to abnormalities in eye contact and body language or deficits\nin understanding and use of gestures; to a total lack of facial expressions and\nnonverbal communication.",
+      "options": [
+        {"answer": "yes", "value": [1, 1]},
+        {"answer": "no", "value": [0, 1]}
+      ]
+    }
+  ],
+  "Domains": [
+    {"domain": "Nothing",            "value": 0, "threshold": 0,
+     "facts": []
+    },
+    {"domain": "Autism repetitive",  "value": 1, "threshold": 2,
+     "facts": [
+        "fidgeting",
+        "sameness",
+        "interests",
+        "sensory input"
+     ]
+    },
+    {"domain": "Autism social",      "value": 2, "threshold": 3,
+     "facts": [
+        "relationships",
+        "nonverbal",
+        "reciprocity"
+     ]
+    },
+    {"domain": "ADHD hyperactivity", "value": 3, "threshold": 5,
+     "facts": [
+       "fidget",
+       "leaving",
+       "restless",
+       "not_quiet",
+       "motor",
+       "excessive_talking",
+       "blurt_out",
+       "turn_waiting",
+       "interrupt"
+     ]
+    },
+    {"domain": "ADHD inattention",   "value": 4, "threshold": 5,
+     "facts": [
+       "details",
+       "attention",
+       "listening",
+       "following through",
+       "organization",
+       "avoid effort",
+       "losing things",
+       "easily distracted",
+       "forgetful"
+     ]
+    },
+    {"domain": "OCD obsessions",     "value": 5, "threshold": 2,
+     "facts": [
+       "intrusive thoughts",
+       "neutralize"
+     ]
+    },
+    {"domain": "OCD compulsions",    "value": 5, "threshold": 2,
+     "facts": [
+       "repetitive behaviors",
+       "reducing anxiety"
+     ]
+    },
+    {"domain": "Selective mutism",   "value": 6, "threshold": 1,
+     "facts": [
+       "failure to speak"
+     ]
+    },
+    {"domain": "IDD",                "value": 7, "threshold": 2,
+     "facts": [
+       "intellectual deficit",
+       "adaptive deficit"
+     ]
+    },
+    {"domain": "language disorder",  "value": 8, "threshold": 3,
+     "facts": [
+       "vocabulary",
+       "sentence structure",
+       "conversation"
+     ]
+    },
+    {"domain": "SMD",                "value": 9, "threshold": 4,
+     "facts": [
+       "social",
+       "context",
+       "rules",
+       "interpretation"
+     ]
+    }
+  ]
+}

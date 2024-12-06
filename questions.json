@@ -1,0 +1,22 @@
+{
+    "questions": [
+        {
+            "question": "You're driving on the road, and a car cuts you off. How do you react?",
+            "options": [
+                {"answer": "you get angry, shout and make rude gestures.", "value": [1, 1]},
+                {"answer": "you take a moment to calm down and breathe", "value": [0, 1]},
+                {"answer": "you follow the car and make them pull over to make them understand what they did wrong", "value": [1, 1]},
+                {"answer": "you report them to the authorities to make them repent for what they did", "value": [1, 1]}
+            ]
+        },
+        {
+            "question": "What score do we give a point",
+            "options": [
+                {"answer": "Sound", "value": [0, 2]},
+                {"answer": "Autism", "value": [1, 2]},
+                {"answer": "ADHD", "value": [2, 2]}
+            ]
+        }
+    ],
+    "thresholds": [2, 2, 2]
+}

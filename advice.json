@@ -1,0 +1,11 @@
+{
+    "SOUND": {
+        "advice": "Everything seems fine."
+    },
+    "AUTISM": {
+        "advice": "Signs of autism."
+    },
+    "ADHD": {
+        "advice": "Signs of ADHD."
+    }
+}
