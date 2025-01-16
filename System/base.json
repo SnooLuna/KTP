@@ -1,0 +1,162 @@
+{
+    "Questions": [
+        {
+            "question": "Here is situation. What do?Here is situation. What do??",
+            "options":
+            [
+                {
+                    "answer": "I do sth dumb",
+                    "conclusion": "Obsessions"
+                },
+                {
+                    "answer": "Another answer",
+                    "conclusion": "Compulsions"
+                }
+            ]
+        }
+    ],
+    "Rules": [
+        {
+            "conclusion": "Inattentive symptoms",
+            "requirements":
+            [
+                "Careless mistakes",
+                "Keeping attention",
+                "Active listening",
+                "Following instructions",
+                "Organizing tasks",
+                "Avoiding effort",
+                "Losing things",
+                "Easily distracted",
+                "Forgetful"
+            ],
+            "count": 5
+        },
+        {
+            "conclusion": "Hyperactive symptoms",
+            "requirements":
+            [
+                "Fidgets",
+                "Stands up",
+                "Restless",
+                "Can't stay quiet",
+                "On the go",
+                "Talks too much",
+                "Blurts out answers",
+                "Can't wait for turn",
+                "Interrupts"
+            ],
+            "count": 5
+        },
+        {
+            "conclusion": "ADHD",
+            "requirements":
+            [
+                "Inattentive symptoms",
+                "Hyperactive symptoms"
+            ],
+            "count": 1
+        },
+        {
+            "conclusion": "Social deficits",
+            "requirements":
+            [
+                "Lack of reciprocity",
+                "Poor nonverbal communication",
+                "Difficulty with relationships"
+            ],
+            "count": 3
+        },
+        {
+            "conclusion": "Repetitive behaviors",
+            "requirements":
+            [
+                "Stereotyped movements",
+                "Inflexible",
+                "Special interests",
+                "Sensory issues"
+            ],
+            "count": 2
+        },
+        {
+            "conclusion": "Autism",
+            "requirements":
+            [
+                "Social deficits",
+                "Repetitive behaviors"
+            ],
+            "count": 2
+        },
+        {
+            "conclusion": "OCD",
+            "requirements":
+            [
+                "Obsessions",
+                "Compulsions"
+            ],
+            "count": 1
+        },
+        {
+            "conclusion": "Communication Disorder",
+            "requirements":
+            [
+                "Speech ignores context",
+                "Pragmatic difficulties",
+                "Lack of reciprocity",
+                "Poor nonverbal communication"
+            ],
+            "count": 4
+        },
+        {
+            "conclusion": "Stereotypic Movement Disorder",
+            "requirements":
+            [
+                "Stereotyped movements"
+            ],
+            "count": 1
+        }
+    ],
+    "Goals": [
+        "Autism",
+        "ADHD",
+        "OCD",
+        "Stereotypic Movement Disorder",
+        "Communication Disorder",
+        "Anxiety Disorder"
+    ],
+    "Facts": [
+        "Inattentive symptoms",
+        "Careless mistakes",
+        "Keeping attention",
+        "Active listening",
+        "Following instructions",
+        "Organizing tasks",
+        "Avoiding effort",
+        "Losing things",
+        "Easily distracted",
+        "Forgetful",
+        "Hyperactive symptoms",
+        "Fidgets",
+        "Stands up",
+        "Restless",
+        "Can't stay quiet",
+        "On the go",
+        "Talks too much",
+        "Blurts out answers",
+        "Can't wait for turn",
+        "Interrupts",
+        "Social deficits",
+        "Lack of reciprocity",
+        "Poor nonverbal communication",
+        "Difficulty with relationships",
+        "Repetitive behaviors",
+        "Stereotyped movements",
+        "Inflexible",
+        "Special interests",
+        "Sensory issues",
+        "Obsessions",
+        "Compulsions",
+        "Speech ignores context",
+        "Pragmatic difficulties"
+    ]
+}
