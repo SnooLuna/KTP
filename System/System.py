@@ -63,9 +63,11 @@ class System(CTk):
         symptom = self._choose_symptom()
         questions = [q for q in self._base.questions if check_conclusions(q, symptom)]
         if not questions:
-            print("::DDDDDDDDDDDD")
-            self._result_screen()
-            return
+            if self._base.symptoms:
+                questions = [q for q in self._base.questions if q["category"] == "ata" and q["symptom"] == symptom]
+            else:
+                self._result_screen()
+                return
         self._display(choice(questions))
 
     def _ready(self):
@@ -136,6 +138,7 @@ class System(CTk):
                 qs.append(question)
         for q in qs:
             self._base.questions.remove(q)
+        self._base.symptoms.remove(option["conclusion"])
         self._display(self._find_ata(option["conclusion"]))
 
     def _answered(self, question, options):
@@ -171,7 +174,7 @@ class System(CTk):
 
 
 if __name__ == "__main__":
-    sys = System("Differential Diagnoses of Autism Spectrum Disorder", "base.json")
+    sys = System("Differential Diagnoses of Autism Spectrum Disorder", "KB.json")
     sys.mainloop()
 
 # choose goal
