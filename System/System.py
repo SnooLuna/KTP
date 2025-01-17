@@ -56,24 +56,32 @@ class System(CTk):
 
     def _next_question(self):
         if self._ready():
+            print("ready")
             self._result_screen()
             return
         self._choose_goal()
         symptom = self._choose_symptom()
         questions = [q for q in self._base.questions if check_conclusions(q, symptom)]
         if not questions:
+            print("::DDDDDDDDDDDD")
             self._result_screen()
             return
         self._display(choice(questions))
 
     def _ready(self):
+        ds = []
         for disorder in self._base.diagnostics:
             if self._diagnosable(disorder):
                 self._true.append(disorder["conclusion"])   # this goal is now reached
-                self._base.diagnostics.remove(disorder)           # cant diagnose it again
-            if self._ruled_out(disorder):
+                ds.append(disorder)
+            elif self._ruled_out(disorder):
                 self._false.append(disorder["conclusion"])
-                self._base.diagnostics.remove(disorder)
+                if disorder["conclusion"] in self._base.goals:
+                    self._base.goals.remove(disorder["conclusion"])
+                ds.append(disorder)
+
+        for d in ds:
+            self._base.diagnostics.remove(d)
 
         if any((diagnosis := goal) in self._true for goal in self._base.goals):
             self._diagnosis = diagnosis
@@ -83,12 +91,11 @@ class System(CTk):
     def _ruled_out(self, disorder):
         falses = sum([sym in self._false for sym in disorder["requirements"]])
         threshold = len(disorder["requirements"]) - disorder["count"]
-        print(disorder["conclusion"], falses, threshold, self._false)
         return falses > threshold
 
     def _diagnosable(self, disorder):
         facts = sum([sym in self._true for sym in disorder["requirements"]])
-        print(disorder["conclusion"], facts, disorder["count"])
+        print(disorder["conclusion"], facts, disorder["count"], self._false, '\n', self._true)
         return facts >= disorder["count"] and (set(disorder["not"]) & set(self._false) == set(disorder["not"]))
 
     def _find_ata(self, symptom):
@@ -97,6 +104,7 @@ class System(CTk):
 
     def _choose_goal(self):
         if not self._base.goals:
+            print("no goals")
             self._result_screen()
             return
         self._current_goal = choice(self._base.goals)
@@ -108,12 +116,12 @@ class System(CTk):
     def _display(self, question):
         self._clear_screen()
 
-        self._make_label(question["question"], 700)
-
         if question["category"] == "mcq":
+            self._make_label(question["question"], 700, pady=80)
             for option in question["options"]:
-                self._make_button(option["answer"], lambda q=question, opt=option: self._answeredMC(q, opt), 5)
+                self._make_button(option["answer"], lambda opt=option: self._answeredMC(opt))
         if question["category"] == "ata":
+            self._make_label(question["question"], 700)
             values = {}
             for option in sample(question["options"], len(question["options"])):
                 value = BooleanVar()
@@ -121,11 +129,13 @@ class System(CTk):
                 values[option["conclusion"]] = value
             self._make_button("Done", lambda q=question, v=values: self._answered(q, v))
 
-    def _answeredMC(self, question, option):
-        self._base.questions.remove(question)
+    def _answeredMC(self, option):
+        qs = []
         for question in self._base.questions:
             if check_conclusions(question, option["conclusion"]):
-                self._base.questions.remove(question)
+                qs.append(question)
+        for q in qs:
+            self._base.questions.remove(q)
         self._display(self._find_ata(option["conclusion"]))
 
     def _answered(self, question, options):
