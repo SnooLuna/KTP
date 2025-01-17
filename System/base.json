@@ -157,7 +157,8 @@
                 "Obsessions",
                 "Compulsions"
             ],
-            "count": 1
+            "count": 1,
+            "not": ["ADHD"]
         },
         {
             "conclusion": "Communication Disorder",
