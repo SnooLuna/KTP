@@ -494,7 +494,8 @@
                 "Easily distracted",
                 "Forgetful"
             ],
-            "count": 5
+            "count": 5,
+            "not": []
         },
         {
             "conclusion": "Hyperactive symptoms",
@@ -510,7 +511,8 @@
                 "Can't wait for turn",
                 "Interrupts"
             ],
-            "count": 5
+            "count": 5,
+            "not": []
         },
         {
             "conclusion": "ADHD",
@@ -519,7 +521,8 @@
                 "Inattentive symptoms",
                 "Hyperactive symptoms"
             ],
-            "count": 1
+            "count": 1,
+            "not": []
         },
         {
             "conclusion": "Social deficits",
@@ -529,7 +532,8 @@
                 "Poor nonverbal communication",
                 "Difficulty with relationships"
             ],
-            "count": 3
+            "count": 3,
+            "not": []
         },
         {
             "conclusion": "Repetitive behaviors",
@@ -540,7 +544,8 @@
                 "Special interests",
                 "Sensory issues"
             ],
-            "count": 2
+            "count": 2,
+            "not": []
         },
         {
             "conclusion": "Autism",
@@ -549,7 +554,8 @@
                 "Social deficits",
                 "Repetitive behaviors"
             ],
-            "count": 2
+            "count": 2,
+            "not": []
         },
         {
             "conclusion": "OCD",
@@ -558,7 +564,8 @@
                 "Obsessions",
                 "Compulsions"
             ],
-            "count": 1
+            "count": 1,
+            "not": []
         },
         {
             "conclusion": "Communication Disorder",
@@ -569,7 +576,8 @@
                 "Lack of reciprocity",
                 "Poor nonverbal communication"
             ],
-            "count": 4
+            "count": 4,
+            "not": []
         },
         {
             "conclusion": "Stereotypic Movement Disorder",

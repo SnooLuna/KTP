@@ -83,14 +83,17 @@ class System(CTk):
     def _ruled_out(self, disorder):
         falses = sum([sym in self._false for sym in disorder["requirements"]])
         threshold = len(disorder["requirements"]) - disorder["count"]
+        print(disorder["conclusion"], falses, threshold, self._false)
         return falses > threshold
 
     def _diagnosable(self, disorder):
         facts = sum([sym in self._true for sym in disorder["requirements"]])
+        print(disorder["conclusion"], facts, disorder["count"])
         return facts >= disorder["count"] and (set(disorder["not"]) & set(self._false) == set(disorder["not"]))
 
     def _find_ata(self, symptom):
-        return [question for question in self._base.questions if question["symptom"] == symptom][0]
+        return [question for question in self._base.questions
+                if question["category"] == "ata" and question["symptom"] == symptom][0]
 
     def _choose_goal(self):
         if not self._base.goals:
@@ -127,6 +130,8 @@ class System(CTk):
 
     def _answered(self, question, options):
         for fact, value in options.items():
+            if fact == "Inconclusive":
+                continue
             if value.get():
                 self._true.append(self._base.facts.pop(self._base.facts.index(fact)))
             else:
