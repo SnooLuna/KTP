@@ -12,10 +12,73 @@
                     "answer": "Another answer",
                     "conclusion": "Compulsions"
                 }
-            ]
+            ],
+            "category": "ata",
+            "symptom": "Repetitive"
+        },
+        {
+            "question": "Here is situation. What do?Here is situation. What do??",
+            "options":
+            [
+                {
+                    "answer": "I do sth dumb",
+                    "conclusion": "Repetitive"
+                },
+                {
+                    "answer": "Another answer",
+                    "conclusion": "Social"
+                }
+            ],
+            "category": "mcq"
         }
     ],
-    "Rules": [
+    "Symptoms": [
+        "Carelessness",
+        "Attention",
+        "Driven",
+        "Impatient",
+        "Social",
+        "Repetitive"
+    ],
+    "Categories": [
+        {
+            "conclusion": "ADHD",
+            "symptoms":
+            [
+                "Repetitive"
+            ]
+        },
+        {
+            "conclusion": "OCD",
+            "symptoms":
+            [
+                "Repetitive"
+            ]
+        },
+        {
+            "conclusion": "Autism",
+            "symptoms":
+            [
+                "Repetitive"
+            ]
+        },
+        {
+            "conclusion": "Stereotypic Movement Disorder",
+            "symptoms":
+            [
+                "Repetitive"
+            ]
+        },
+        {
+            "conclusion": "Communication Disorder",
+            "symptoms":
+            [
+                "Repetitive"
+            ]
+        }
+
+    ],
+    "Diagnostics": [
         {
             "conclusion": "Inattentive symptoms",
             "requirements":
@@ -121,8 +184,7 @@
         "ADHD",
         "OCD",
         "Stereotypic Movement Disorder",
-        "Communication Disorder",
-        "Anxiety Disorder"
+        "Communication Disorder"
     ],
     "Facts": [
         "Inattentive symptoms",
