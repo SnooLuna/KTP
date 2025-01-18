@@ -13,6 +13,7 @@ class KnowledgeBase:
         self.symptoms = knowledge["Symptoms"]
         self.facts = knowledge["Facts"]
         self.categories = knowledge["Categories"]
+        self.text = knowledge["Text"]
 
 
 def check_conclusions(question, requirement):
@@ -24,48 +25,54 @@ class System(CTk):
         super().__init__()
 
         self.title(title)
-        self.geometry("800x450")
+        self.geometry("750x600")
         self._base = KnowledgeBase(base)
         self._true = []
         self._false = []
         self._current_goal = None
         self._diagnosis = "Inconclusive"
         self._screen = []
-        set_default_color_theme("green")
+        self._frame = CTkFrame(self)
+        self._frame.pack(pady=20, padx=20, fill="x")
+        set_default_color_theme("dark-blue")
 
         self._start_screen()
 
     def _start_screen(self):
-        self._make_label("Introduction Text.")
+        self._make_label("Welcome to this self-assessment quiz!", pady=20, fontsize=25)
+        self._make_label(self._base.text["introduction"], pady=20)
         self._make_button("Start", self._next_question)
 
-    def _make_label(self, text=None, wraplength=700, pady=10, padx=0):
-        label = CTkLabel(self, text=text, wraplength=wraplength)
+    def _make_label(self, text=None, wraplength=700, pady=10, padx=0, fontsize=18):
+        label = CTkLabel(self._frame, text=text, wraplength=wraplength, font=("Arial", fontsize))
         label.pack(pady=pady, padx=padx)
         self._screen.append(label)
 
     def _make_button(self, text=None, command=None, pady=10, padx=0):
-        button = CTkButton(self, text=text, command=command)
-        button.pack(pady=pady, padx=padx)
+        button = CTkButton(self._frame, text=text, command=command, font=("Arial", 16))
+        button.pack(pady=pady, padx=padx, ipadx=15, ipady=5)
         self._screen.append(button)
 
-    def _make_check(self, text=None, command=None, var=None, on=None, off=None, pady=10, padx=0):
-        check = CTkCheckBox(self, text=text, command=command, variable=var, onvalue=on, offvalue=off)
-        check.pack(pady=pady, padx=padx)
+    def _make_check(self, text=None, command=None, var=None, on=None, off=None, pady=10, padx=40):
+        check = CTkCheckBox(self._frame, text=text, command=command, variable=var, onvalue=on, offvalue=off,
+                            border_width=2, font=("Arial", 14))
+        check.pack(pady=pady, padx=padx, anchor="w")
         self._screen.append(check)
 
     def _next_question(self):
         if self._ready():
-            print("ready")
             self._result_screen()
             return
-        self._choose_goal()
+        if not self._choose_goal():
+            return
         symptom = self._choose_symptom()
         questions = [q for q in self._base.questions if check_conclusions(q, symptom)]
         if not questions:
-            print("::DDDDDDDDDDDD")
-            self._result_screen()
-            return
+            if self._base.symptoms:
+                questions = [q for q in self._base.questions if q["category"] == "ata" and q["symptom"] == symptom]
+            else:
+                self._result_screen()
+                return
         self._display(choice(questions))
 
     def _ready(self):
@@ -95,7 +102,7 @@ class System(CTk):
 
     def _diagnosable(self, disorder):
         facts = sum([sym in self._true for sym in disorder["requirements"]])
-        print(disorder["conclusion"], facts, disorder["count"], self._false, '\n', self._true)
+        # print(disorder["conclusion"], facts, disorder["count"], self._false, '\n', self._true)
         return facts >= disorder["count"] and (set(disorder["not"]) & set(self._false) == set(disorder["not"]))
 
     def _find_ata(self, symptom):
@@ -104,10 +111,10 @@ class System(CTk):
 
     def _choose_goal(self):
         if not self._base.goals:
-            print("no goals")
             self._result_screen()
-            return
+            return False
         self._current_goal = choice(self._base.goals)
+        return True
 
     def _choose_symptom(self):
         categories = [categories for categories in self._base.categories if categories["conclusion"] == self._current_goal][0]
@@ -117,9 +124,9 @@ class System(CTk):
         self._clear_screen()
 
         if question["category"] == "mcq":
-            self._make_label(question["question"], 700, pady=80)
+            self._make_label(question["question"], 700, pady=50)
             for option in question["options"]:
-                self._make_button(option["answer"], lambda opt=option: self._answeredMC(opt))
+                self._make_button(option["answer"], lambda opt=option: self._answeredMC(opt), pady=20)
         if question["category"] == "ata":
             self._make_label(question["question"], 700)
             values = {}
@@ -147,27 +154,19 @@ class System(CTk):
             else:
                 self._false.append(self._base.facts.pop(self._base.facts.index(fact)))
         self._base.questions.remove(question)
+        self._base.symptoms.remove(question["symptom"])
         self._next_question()
 
     def _result_screen(self):
         self._clear_screen()
-        self._make_label(self._result_text0(), pady=50)
-        self._make_label(self._result_text1(self._diagnosis), pady=5)
-        self._make_label(self._result_text2())
+        self._make_label("Test complete!", pady=50, fontsize=24)
+        self._make_label("Your result is:\n" + self._diagnosis, pady=5, fontsize=24)
+        self._make_label(self._base.text["disclaimer"], pady=30)
 
     def _clear_screen(self):
         for label in self._screen:
             label.pack_forget()
         self._screen = []
-
-    def _result_text0(self):
-        return "Test Complete!"
-
-    def _result_text1(self, diagnosis):
-        return "U got: " + diagnosis
-
-    def _result_text2(self):
-        return "this is not real advice"
 
 
 if __name__ == "__main__":

@@ -9,14 +9,14 @@
                     "conclusion": "Carelessness"
                 },
                 {
-                    "answer": "I got carried away while writing, and half of my essay ended up being about a different topic than assigned.",
+                    "answer": "I got carried away while writing, and half of my essay ended up being about\na different topic than assigned.",
                     "conclusion": "Inattentiveness"
                 }
             ],
             "category": "mcq"
         },
         {
-            "question": "You're taking an exam for one of your courses. Which of the following are you more likely to do?",
+            "question": "You're taking an exam for one of your courses.\nWhich of the following are you more likely to do?",
             "options":
             [
                 {
@@ -46,7 +46,7 @@
             "category": "mcq"
         },
         {
-            "question": "You are working on a group project, but things are not going well. What is most likely the issue?",
+            "question": "You are working on a group project, but things are not going well.\nWhat is most likely the issue?",
             "options":
             [
                 {
@@ -54,7 +54,7 @@
                     "conclusion": "Carelessness"
                 },
                 {
-                    "answer": "My teammates have not texted me about the project yet, and I'm too scared to be the one to start the conversation.",
+                    "answer": "My teammates have not texted me about the project yet,\nand I'm too scared to be the one to start the conversation.",
                     "conclusion": "Asociality"
                 }
             ],
@@ -69,7 +69,7 @@
                     "conclusion": "Carelessness"
                 },
                 {
-                    "answer": "I wasn't sure whether I turned the stove off after making breakfast, so I had to go back to check.",
+                    "answer": "I wasn't sure whether I turned the stove off after making breakfast,\nso I had to go back to check.",
                     "conclusion": "Repetitiveness"
                 }
             ],
@@ -80,7 +80,7 @@
             "options":
             [
                 {
-                    "answer": "I occupy my mind with thoughts of what I might later today.",
+                    "answer": "I occupy my mind with thoughts of what I might do later today.",
                     "conclusion": "Inattentiveness"
                 },
                 {
@@ -189,7 +189,7 @@
                     "conclusion": "Impatience"
                 },
                 {
-                    "answer": "People don't leave room for me to speak, making it difficult for me to contribute to the discussion.",
+                    "answer": "People don't leave room for me to speak,\nmaking it difficult for me to contribute to the discussion.",
                     "conclusion": "Asociality"
                 }
             ],
@@ -211,7 +211,7 @@
             "category": "mcq"
         },
         {
-            "question": "Your friends tell you that sometimes having a conversation with you can feel one-sided. What happens?",
+            "question": "Your friends tell you that sometimes having a conversation with you can feel one-sided. Why could this be?",
             "options":
             [
                 {
@@ -230,7 +230,7 @@
             "options":
             [
                 {
-                    "answer": "I often make small mistakes while working, or I misunderstand what is expected of me.",
+                    "answer": "I often make small mistakes while working,\nor I misunderstand what is expected of me.",
                     "conclusion": "Careless mistakes"
                 },
                 {
@@ -238,7 +238,7 @@
                     "conclusion": "Inconclusive"
                 },
                 {
-                    "answer": "I have trouble leaving myself enough time to do things, whether schoolwork or things I want to do.",
+                    "answer": "I have trouble leaving myself enough time to do things,\nwhether schoolwork or things I want to do.",
                     "conclusion": "Organizing tasks"
                 },
                 {
@@ -266,7 +266,7 @@
                     "conclusion": "Keeping attention"
                 },
                 {
-                    "answer": "I often miss what people say to me, even if I am trying to stay engaged in the conversation.",
+                    "answer": "I often miss what people say to me, even if I am trying\nto stay engaged in the conversation.",
                     "conclusion": "Active listening"
                 },
                 {
@@ -282,11 +282,11 @@
                     "conclusion": "Following instructions"
                 },
                 {
-                    "answer": "When a task requires me to concentrate for a long time, I put it off until the last minute.",
+                    "answer": "When a task requires me to concentrate for a long time,\nI put it off until the last minute.",
                     "conclusion": "Avoiding effort"
                 },
                 {
-                    "answer": "I often get distracted, either by things happening around me, or by the thoughts in my head.",
+                    "answer": "I often get distracted, either by things happening around me,\nor by the thoughts in my head.",
                     "conclusion": "Easily distracted"
                 }
             ],
@@ -346,7 +346,7 @@
                     "conclusion": "Can't wait for turn"
                 },
                 {
-                    "answer": "When others are taking too long to complete a task, I want to take over and do it myself.",
+                    "answer": "When others are taking too long to complete a task,\nI want to take over and do it myself.",
                     "conclusion": "Interrupts"
                 },
                 {
@@ -370,7 +370,7 @@
                     "conclusion": "Lack of reciprocity"
                 },
                 {
-                    "answer": "I never know how to interpret or use nonverbal social cues. Things like eye-contact, gestures and facial expressions seem like a different language to me.",
+                    "answer": "I never know how to interpret or use nonverbal social cues. Things like eye-contact,\ngestures and facial expressions seem like a different language to me.",
                     "conclusion": "Poor nonverbal communication"
                 },
                 {
@@ -378,11 +378,11 @@
                     "conclusion": "Difficulty with relationships"
                 },
                 {
-                    "answer": "I often struggle with speaking in a way the situation calls for. I might talk too loud/quiet, too formal/informally, etc.",
+                    "answer": "I often struggle with speaking in a way the situation calls for.\nI might talk too loud/quiet, too formal/informally, etc.",
                     "conclusion": "Speech ignores context"
                 },
                 {
-                    "answer": "People often say things that have hidden meanings I don't understand. I'm not very good at understanding things like metaphors and sarcasm.",
+                    "answer": "People often say things that have hidden meanings I don't understand.\nI'm not very good at understanding things like metaphors and sarcasm.",
                     "conclusion": "Pragmatic difficulties"
                 },
                 {
@@ -406,27 +406,27 @@
                     "conclusion": "Stereotyped movements"
                 },
                 {
-                    "answer": "I like to keep things the same, like keeping a consistent routine, taking the same route to school/work or eating the same food.",
+                    "answer": "I like to keep things the same, like keeping a consistent routine,\ntaking the same route to school/work or eating the same food.",
                     "conclusion": "Inflexible"
                 },
                 {
-                    "answer": "There are one or two topics I like to spend a majority of my time learning or thinking about.",
+                    "answer": "There are one or two topics I like to spend a majority\nof my time learning or thinking about.",
                     "conclusion": "Special interests"
                 },
                 {
-                    "answer": "According to others, I often under or overreact to things like bright lights, loud noises, textures, smells, etc.",
+                    "answer": "According to others, I often under or overreact to things like bright lights,\nloud noises, textures, smells, interesting visuals etc.",
                     "conclusion": "Sensory issues"
                 },
                 {
-                    "answer": "I often experience intrusive thoughts. These scare me and I try my best to get rid of them somehow.",
+                    "answer": "I often experience intrusive thoughts.\nThese scare me and I try my best to get rid of them somehow.",
                     "conclusion": "Obsessions"
                 },
                 {
-                    "answer": "I often do or think a certain thing to reduce stress about something that's been occupying my mind, even though it's not related, or because I feel like something bad will happen if I don't.",
+                    "answer": "I often do or think a certain thing to reduce stress about something that's been occupying my\nmind, even though it's not related, or because I feel like something bad will happen if I don't.",
                     "conclusion": "Compulsions"
                 },
                 {
-                    "answer": "I have a lucky charm, which I like to carry with me to important or stressful events such as exams.",
+                    "answer": "I have a lucky charm, which I like to carry with me to important\nor stressful events such as exams.",
                     "conclusion": "Inconclusive"
                 },
                 {
@@ -440,7 +440,7 @@
     ],
     "Categories": [
         {
-            "conclusion": "ADHD",
+            "conclusion": "Attention-Deficit/Hyperactive Disorder",
             "symptoms":
             [
                 "Carelessness",
@@ -450,7 +450,7 @@
             ]
         },
         {
-            "conclusion": "Autism",
+            "conclusion": "Autism Spectrum Disorder",
             "symptoms": 
             [
                 "Asociality",
@@ -458,7 +458,7 @@
             ]
         },
         {
-            "conclusion": "OCD",
+            "conclusion": "Obsessive-Compulsive Disorder",
             "symptoms": 
             [
                 "Repetitiveness"
@@ -472,7 +472,7 @@
             ]
         },
         {
-            "conclusion": "Communication Disorder",
+            "conclusion": "Social (Pragmatic) Communication Disorder",
             "symptoms":
             [
                 "Asociality"
@@ -515,7 +515,7 @@
             "not": []
         },
         {
-            "conclusion": "ADHD",
+            "conclusion": "Attention-Deficit/Hyperactive Disorder",
             "requirements":
             [
                 "Inattentive symptoms",
@@ -548,7 +548,7 @@
             "not": []
         },
         {
-            "conclusion": "Autism",
+            "conclusion": "Autism Spectrum Disorder",
             "requirements":
             [
                 "Social deficits",
@@ -558,7 +558,7 @@
             "not": []
         },
         {
-            "conclusion": "OCD",
+            "conclusion": "Obsessive-Compulsive Disorder",
             "requirements":
             [
                 "Obsessions",
@@ -568,7 +568,7 @@
             "not": []
         },
         {
-            "conclusion": "Communication Disorder",
+            "conclusion": "Social (Pragmatic) Communication Disorder",
             "requirements":
             [
                 "Speech ignores context",
@@ -586,18 +586,17 @@
                 "Stereotyped movements"
             ],
             "count": 1,
-            "not":
-            [
-                "Autism"
+            "not": [
+                "Autism Spectrum Disorder"
             ]
         }
     ],
     "Goals": [
-        "Autism",
-        "ADHD",
-        "OCD",
+        "Autism Spectrum Disorder",
+        "Attention-Deficit/Hyperactive Disorder",
+        "Obsessive-Compulsive Disorder",
         "Stereotypic Movement Disorder",
-        "Communication Disorder"
+        "Social (Pragmatic) Communication Disorder"
     ],
     "Symptoms": [
         "Carelessness",
@@ -641,5 +640,10 @@
         "Compulsions",
         "Speech ignores context",
         "Pragmatic difficulties"
-    ]
+    ],
+    "Text": {
+        "introduction": "This interactive quiz is designed to distinguish between common differential diagnoses of Autism Spectrum Disorder.\n\n\nHow does it work?\n\nYou'll be presented with multiple-choice questions about everyday situations.\nChoose the option that feels most like you.\n\nBased on your answer, you'll move on to a \"Select All That Apply\" question.\nHere, select any statements that you feel apply to you.\n\nOnce there is enough information, you will receive a potential diagnosis\nwhich you could look into with a professional.",
+
+        "disclaimer": "This quiz is meant to provide a starting point for your mental health journey and is for informational purposes only, it does not give a definitive medical diagnosis.\nFor professional advice, please consult a qualified healthcare provider."
+    }
 }
