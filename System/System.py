@@ -171,13 +171,5 @@ class System(CTk):
 
 
 if __name__ == "__main__":
-    sys = System("Differential Diagnoses of Autism Spectrum Disorder", "KB.json")
+    sys = System("Differential Diagnoses of Autism Spectrum Disorder", "base.json")
     sys.mainloop()
-
-# choose goal
-# choose symptom based on goal
-# choose MC question based on symptom
-# display ATA question based on answer
-# check if diagnosis is done
-# choose new goal if no goal
-# choose new symptom...
