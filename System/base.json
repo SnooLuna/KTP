@@ -1,231 +1,6 @@
 {
     "Questions": [
         {
-            "question": "Your teacher has graded an essay you submitted, but your grade is lower than you expected. It seems you have misunderstood the task. What happened?",
-            "options":
-            [
-                {
-                    "answer": "I forgot the details of the instructions we were given.",
-                    "conclusion": "Carelessness"
-                },
-                {
-                    "answer": "I got carried away while writing, and half of my essay ended up being about\na different topic than assigned.",
-                    "conclusion": "Inattentiveness"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You're taking an exam for one of your courses.\nWhich of the following are you more likely to do?",
-            "options":
-            [
-                {
-                    "answer": "I reread every question several times because I often make mistakes while answering.",
-                    "conclusion": "Carelessness"
-                },
-                {
-                    "answer": "I try to complete the exam and leave the exam hall as quickly as possible.",
-                    "conclusion": "Restlessness"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "Your teacher calls you in to their office. Why are they unhappy with you?",
-            "options":
-            [
-                {
-                    "answer": "I often overlook parts of questions in tests, causing my answers to be incorrect.",
-                    "conclusion": "Carelessness"
-                },
-                {
-                    "answer": "I often talk during class when we are expected to be working quietly.",
-                    "conclusion": "Impatience"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You are working on a group project, but things are not going well.\nWhat is most likely the issue?",
-            "options":
-            [
-                {
-                    "answer": "I keep forgetting to schedule enough time to work on my part of the project.",
-                    "conclusion": "Carelessness"
-                },
-                {
-                    "answer": "My teammates have not texted me about the project yet,\nand I'm too scared to be the one to start the conversation.",
-                    "conclusion": "Asociality"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You missed the bus to class this morning. What caused you to be late?",
-            "options":
-            [
-                {
-                    "answer": "I didn't leave myself enough time to get ready, and I couldn't run to the bus stop on time.",
-                    "conclusion": "Carelessness"
-                },
-                {
-                    "answer": "I wasn't sure whether I turned the stove off after making breakfast,\nso I had to go back to check.",
-                    "conclusion": "Repetitiveness"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You are sitting in a lecture and are feeling bored out of your mind. Which of these do you do?",
-            "options":
-            [
-                {
-                    "answer": "I occupy my mind with thoughts of what I might do later today.",
-                    "conclusion": "Inattentiveness"
-                },
-                {
-                    "answer": "I fidget with my things and tap my feet to release energy.",
-                    "conclusion": "Restlessness"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You're talking to an acquaintance, but you've unintentionally committed a social faux pas. What happened?",
-            "options":
-            [
-                {
-                    "answer": "I forgot to listen to a question they asked me.",
-                    "conclusion": "Inattentiveness"
-                },
-                {
-                    "answer": "I started answering their question while they were still talking.",
-                    "conclusion": "Impatience"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "Your friends have invited you to a busy party with many people you don't know, but you are the first one from your circle to show up. What do you do?",
-            "options":
-            [
-                {
-                    "answer": "I go talk to as many new people as I can.",
-                    "conclusion": "Inattentiveness"
-                },
-                {
-                    "answer": "I distract myself until my friends show up.",
-                    "conclusion": "Asociality"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You meet a friend at a busy cafe, but you struggle to process the words they are saying to you. What has happened?",
-            "options": 
-            [
-                {
-                    "answer": "I keep getting distracted by the variety of noises that surround me.",
-                    "conclusion": "Inattentiveness"
-                },
-                {
-                    "answer": "I get distracted by my thoughts; something has been bothering me all day.",
-                    "conclusion": "Repetitiveness"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You are watching a movie with friends, but they are annoyed at you. Why is this?",
-            "options":
-            [
-                {
-                    "answer": "I keep moving in my seat; I can't seem to find a comfortable position.",
-                    "conclusion": "Restlessness"
-                },
-                {
-                    "answer": "I predicted the ending of the movie 5 minutes in.",
-                    "conclusion": "Impatience"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "A fellow student comes up to you during class and tells you they noticed you look uncomfortable. What did they notice about you?",
-            "options":
-            [
-                {
-                    "answer": "I don't sit still, but move around and fidget.",
-                    "conclusion": "Restlessness"
-                },
-                {
-                    "answer": "I seem to be avoiding looking at or talking to people.",
-                    "conclusion": "Asociality"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You are on your way to school, when you get stuck in traffic, meaning you will likely be late to class. What is your reaction?",
-            "options":
-            [
-                {
-                    "answer": "Having to sit in the middle of the traffic jam makes me extremely angry.",
-                    "conclusion": "Restlessness"
-                },
-                {
-                    "answer": "I panic about the prospect of being late.",
-                    "conclusion": "Repetitiveness"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You are trying to socialize in a group context, but you are having trouble. What has happened?",
-            "options":
-            [
-                {
-                    "answer": "I have a tendency to overshare; I'm never sure when to stop talking.",
-                    "conclusion": "Impatience"
-                },
-                {
-                    "answer": "People don't leave room for me to speak,\nmaking it difficult for me to contribute to the discussion.",
-                    "conclusion": "Asociality"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "You are working on a school project with a partner, but you keep feeling the urge to take over and do everything yourself. Why?",
-            "options":
-            [
-                {
-                    "answer": "My partner overthinks every detail and I know I can do the work faster.",
-                    "conclusion": "Impatience"
-                },
-                {
-                    "answer": "I don't agree with the details of how my partner wants to complete the task.",
-                    "conclusion": "Repetitiveness"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
-            "question": "Your friends tell you that sometimes having a conversation with you can feel one-sided. Why could this be?",
-            "options":
-            [
-                {
-                    "answer": "I don't like volunteering pieces of information about myself.",
-                    "conclusion": "Asociality"
-                },
-                {
-                    "answer": "I often say similar things each time we talk.",
-                    "conclusion": "Repetitiveness"
-                }
-            ],
-            "category": "mcq"
-        },
-        {
             "question": "Please select any/all of the following statements which form a common theme in your day-to-day life.",
             "options":
             [
@@ -436,6 +211,231 @@
             ],
             "category": "ata",
             "symptom": "Repetitiveness"
+        },
+        {
+            "question": "Your teacher has graded an essay you submitted, but your grade is lower than you expected. It seems you have misunderstood the task. What happened?",
+            "options":
+            [
+                {
+                    "answer": "I forgot the details of the instructions we were given.",
+                    "conclusion": "Carelessness"
+                },
+                {
+                    "answer": "I got carried away while writing, and half of my essay ended up being about\na different topic than assigned.",
+                    "conclusion": "Inattentiveness"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You're taking an exam for one of your courses.\nWhich of the following are you more likely to do?",
+            "options":
+            [
+                {
+                    "answer": "I reread every question several times because I often make mistakes while answering.",
+                    "conclusion": "Carelessness"
+                },
+                {
+                    "answer": "I try to complete the exam and leave the exam hall as quickly as possible.",
+                    "conclusion": "Restlessness"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "Your teacher calls you in to their office. Why are they unhappy with you?",
+            "options":
+            [
+                {
+                    "answer": "I often overlook parts of questions in tests, causing my answers to be incorrect.",
+                    "conclusion": "Carelessness"
+                },
+                {
+                    "answer": "I often talk during class when we are expected to be working quietly.",
+                    "conclusion": "Impatience"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You are working on a group project, but things are not going well.\nWhat is most likely the issue?",
+            "options":
+            [
+                {
+                    "answer": "I keep forgetting to schedule enough time to work on my part of the project.",
+                    "conclusion": "Carelessness"
+                },
+                {
+                    "answer": "My teammates have not texted me about the project yet,\nand I'm too scared to be the one to start the conversation.",
+                    "conclusion": "Asociality"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You missed the bus to class this morning. What caused you to be late?",
+            "options":
+            [
+                {
+                    "answer": "I didn't leave myself enough time to get ready, and I couldn't run to the bus stop on time.",
+                    "conclusion": "Carelessness"
+                },
+                {
+                    "answer": "I wasn't sure whether I turned the stove off after making breakfast,\nso I had to go back to check.",
+                    "conclusion": "Repetitiveness"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You are sitting in a lecture and are feeling bored out of your mind. Which of these do you do?",
+            "options":
+            [
+                {
+                    "answer": "I occupy my mind with thoughts of what I might do later today.",
+                    "conclusion": "Inattentiveness"
+                },
+                {
+                    "answer": "I fidget with my things and tap my feet to release energy.",
+                    "conclusion": "Restlessness"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You're talking to an acquaintance, but you've unintentionally committed a social faux pas. What happened?",
+            "options":
+            [
+                {
+                    "answer": "I forgot to listen to a question they asked me.",
+                    "conclusion": "Inattentiveness"
+                },
+                {
+                    "answer": "I started answering their question while they were still talking.",
+                    "conclusion": "Impatience"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "Your friends have invited you to a busy party with many people you don't know, but you are the first one from your circle to show up. What do you do?",
+            "options":
+            [
+                {
+                    "answer": "I go talk to as many new people as I can.",
+                    "conclusion": "Inattentiveness"
+                },
+                {
+                    "answer": "I distract myself until my friends show up.",
+                    "conclusion": "Asociality"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You meet a friend at a busy cafe, but you struggle to process the words they are saying to you. What has happened?",
+            "options":
+            [
+                {
+                    "answer": "I keep getting distracted by the variety of noises that surround me.",
+                    "conclusion": "Inattentiveness"
+                },
+                {
+                    "answer": "I get distracted by my thoughts; something has been bothering me all day.",
+                    "conclusion": "Repetitiveness"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You are watching a movie with friends, but they are annoyed at you. Why is this?",
+            "options":
+            [
+                {
+                    "answer": "I keep moving in my seat; I can't seem to find a comfortable position.",
+                    "conclusion": "Restlessness"
+                },
+                {
+                    "answer": "I predicted the ending of the movie 5 minutes in.",
+                    "conclusion": "Impatience"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "A fellow student comes up to you during class and tells you they noticed you look uncomfortable. What did they notice about you?",
+            "options":
+            [
+                {
+                    "answer": "I don't sit still, but move around and fidget.",
+                    "conclusion": "Restlessness"
+                },
+                {
+                    "answer": "I seem to be avoiding looking at or talking to people.",
+                    "conclusion": "Asociality"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You are on your way to school, when you get stuck in traffic, meaning you will likely be late to class. What is your reaction?",
+            "options":
+            [
+                {
+                    "answer": "Having to sit in the middle of the traffic jam makes me extremely angry.",
+                    "conclusion": "Restlessness"
+                },
+                {
+                    "answer": "I panic about the prospect of being late.",
+                    "conclusion": "Repetitiveness"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You are trying to socialize in a group context, but you are having trouble. What has happened?",
+            "options":
+            [
+                {
+                    "answer": "I have a tendency to overshare; I'm never sure when to stop talking.",
+                    "conclusion": "Impatience"
+                },
+                {
+                    "answer": "People don't leave room for me to speak,\nmaking it difficult for me to contribute to the discussion.",
+                    "conclusion": "Asociality"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "You are working on a school project with a partner, but you keep feeling the urge to take over and do everything yourself. Why?",
+            "options":
+            [
+                {
+                    "answer": "My partner overthinks every detail and I know I can do the work faster.",
+                    "conclusion": "Impatience"
+                },
+                {
+                    "answer": "I don't agree with the details of how my partner wants to complete the task.",
+                    "conclusion": "Repetitiveness"
+                }
+            ],
+            "category": "mcq"
+        },
+        {
+            "question": "Your friends tell you that sometimes having a conversation with you can feel one-sided. Why could this be?",
+            "options":
+            [
+                {
+                    "answer": "I don't like volunteering pieces of information about myself.",
+                    "conclusion": "Asociality"
+                },
+                {
+                    "answer": "I often say similar things each time we talk.",
+                    "conclusion": "Repetitiveness"
+                }
+            ],
+            "category": "mcq"
         }
     ],
     "Categories": [
@@ -577,7 +577,9 @@
                 "Poor nonverbal communication"
             ],
             "count": 4,
-            "not": []
+            "not": [
+                "Autism Spectrum Disorder"
+            ]
         },
         {
             "conclusion": "Stereotypic Movement Disorder",
@@ -643,7 +645,6 @@
     ],
     "Text": {
         "introduction": "This interactive quiz is designed to distinguish between common differential diagnoses of Autism Spectrum Disorder.\n\n\nHow does it work?\n\nYou'll be presented with multiple-choice questions about everyday situations.\nChoose the option that feels most like you.\n\nBased on your answer, you'll move on to a \"Select All That Apply\" question.\nHere, select any statements that you feel apply to you.\n\nOnce there is enough information, you will receive a potential diagnosis\nwhich you could look into with a professional.",
-
         "disclaimer": "This quiz is meant to provide a starting point for your mental health journey and is for informational purposes only, it does not give a definitive medical diagnosis.\nFor professional advice, please consult a qualified healthcare provider."
     }
 }
