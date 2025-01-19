@@ -75,10 +75,9 @@ class System(CTk):
         if self._ready():
             self._result_screen()               # Show diagnosis if found
             return
-        if not self._choose_goal():             # Find new goal to focus on
-            self._result_screen()               # Show (inconclusive) diagnosis if no more goals
+        if not (symptom := self._choose_symptom()):  # Find new symptom to focus on
+            self._result_screen()               # Show (inconclusive) diagnosis
             return
-        symptom = self._choose_symptom()        # Find a symptom for this goal
                                                 # Find all questions that focus on this symptom
         questions = [q for q in self._base.questions if question_has_matching_symptom(q, symptom)]
         if not questions:                       # No multiple choice questions were found
@@ -124,12 +123,25 @@ class System(CTk):
         return falses > threshold   # Return true if this disorder is impossible to diagnose
 
     def _choose_goal(self):
-        if not self._base.goals:                        # no goals are left, return false
+        if not self._base.goals:                        # no goals are left (everything is false, return false
             return False
-        self._current_goal = choice(self._base.goals)   # make a random choice from the available goals
+        if not self._current_goal:                      # choose a new goal if needed
+            self._current_goal = choice(self._base.goals)
         return True
 
     def _choose_symptom(self):
+        if not self._choose_goal():         # Choose new goal if necessary
+            return False                    # No more goals to ask about
+
+        available_goals = []
+        for disorder in self._base.categories:  # Check which goals can still be asked about
+            available_goals.append(disorder["conclusion"])
+
+        if self._current_goal not in available_goals:
+            self._current_goal = None
+            self._choose_goal()                 # Choose a new goal if needed
+            return self._choose_symptom()
+
         # Return a symptom category based on random choice from the list that matches our goal
         category = next(category for category in self._base.categories if category["conclusion"] == self._current_goal)
         return choice(category["symptoms"])
